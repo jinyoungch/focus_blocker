@@ -38,7 +38,7 @@ python cli.py status
 > In order to use this CLI more ergonomically, you can set up an alias in your terminal, eg. by adding the following line to `~/.zshrc`:
 
 ```zsh
-alias focusblock="python src/cli.py"
+alias focusblock="python focus_blocker/cli.py"
 ```
 
 That way you can run the above commands as:
