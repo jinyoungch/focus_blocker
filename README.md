@@ -4,7 +4,7 @@ A CLI tool to block distracting websites using the NextDNS API, with lockout log
 
 ## Setup
 
-> [!TIP]
+> [!NOTE]
 > In order for this tool to work, the following setup steps are required.
 
 1. Create a [NextDNS account](https://my.nextdns.io/) and a new [Apple Configuration Profile](apple.nextdns.io) for your iPhone.
@@ -32,4 +32,20 @@ python cli.py add youtube.com
 python cli.py remove facebook.com
 python cli.py push --lockout 48
 python cli.py status
+```
+
+> [!TIP]
+> In order to use this CLI more ergonomically, you can set up an alias in your terminal, eg. by adding the following line to `~/.zshrc`:
+
+```zsh
+alias focusblock="python src/cli.py"
+```
+
+That way you can run the above commands as:
+
+```zsh
+focusblock add youtube.com
+focusblock remove facebook.com
+focusblock push --lockout 48
+focusblock status
 ```
