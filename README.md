@@ -19,7 +19,9 @@ A CLI tool to block distracting websites using the NextDNS API, with lockout log
 
 5. In your terminal, navigate to the root of this directory and install the following dependencies:
 
-```pip install python-dotenv requests```
+```
+pip install python-dotenv requests
+```
 
 ## Usage
 
