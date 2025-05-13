@@ -11,7 +11,7 @@ A CLI tool to block distracting websites using the NextDNS API, with lockout log
 
 2. Download and install this new configuration profile on your iPhone.
 
-> By downloading the `.mobileconfig` file and clicking on it on your iPhone, you'll see a prompt to navigate to `Settings > General > VPN & Device Management` and install the profile. This gives your iPhone persistent access to the custom DNS settings — including the blocklist managed by this CLI.
+> By downloading the `.mobileconfig` file and clicking on it on your iPhone, you'll see a prompt to navigate to `Settings > General > VPN & Device Management` and install the profile.
 
 3. Navigate to your [NextDNS account](https://my.nextdns.io/account) page, and generate a new API key at the bottom of the page.
 
@@ -27,7 +27,7 @@ pip install python-dotenv requests
 
 The following are the sample commands that are supported by this CLI:
 
-```py
+```bash
 python cli.py add youtube.com
 python cli.py remove facebook.com
 python cli.py push --lockout 48
